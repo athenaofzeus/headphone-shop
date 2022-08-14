@@ -117,6 +117,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .work-area__header_padding {
@@ -125,6 +126,23 @@ body {
 
 .work-area__header_mrgn {
   margin-top: 2vh;
+}
+
+.work-area__search-input {
+  border: none;
+  background-color: aliceblue;
+  padding: 5px 0px 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+@media (max-width: 425px) {
+  .work-area__search-input {
+    width: 52vw;
+  }
 }
 
 .work-area__grope-logos {
@@ -145,12 +163,77 @@ body {
   background-color: #ffff;
 }
 
+.hiddenMenu {
+  position: absolute;
+  width: 25vw;
+  height: 14vh;
+  top: 31px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: flex-end;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.hiddenMenu > ul {
+  background-color: #ffff;
+  position: absolute;
+  top: 17px;
+  list-style-type: none;
+  font-size: calc(12px + 4 * (100vw / 1600));
+  padding: 1vh 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 75%;
+  -webkit-box-shadow: 3px 7px #00000066;
+          box-shadow: 3px 7px #00000066;
+  border-radius: 20px;
+}
+
+.hiddenMenu > ul > li {
+  font-weight: 500;
+  text-align: right;
+  cursor: pointer;
+}
+
+.hiddenMenu > ul :hover {
+  color: #ff4948;
+}
+
 .work-area__main-logo {
   max-width: 45px;
 }
 
+.work-area__parent-menu {
+  position: relative;
+}
+
 .work-area__hamb-menu {
   max-width: 27px;
+}
+
+.work-area__menu-cover {
+  position: absolute;
+  width: 29px;
+  height: 24px;
+  top: -1px;
 }
 
 .work-area__logo-ellips {
